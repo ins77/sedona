@@ -1,0 +1,44 @@
+.reason {
+  padding-top: 53px;
+  padding-left: 65px;
+  padding-right: 65px;
+  height: 256px;
+  text-align: center;
+  background-color: $gallery;
+
+  &__title {
+    @extend .h2;
+    padding-left: 59px;
+    padding-right: 59px;
+    margin-bottom: 30px;
+
+    &:after {
+      content: "— №1 —";
+      display: block;
+      margin-top: 10px;
+      font-weight: $font-weight--normal;
+      font-size: $font-size--base;
+    }
+
+    @for $i from 2 to 6 {
+      &--#{$i}:after {
+        content: "— №#{$i} —";
+      }
+    }
+  }
+
+  &--bright {
+    background-color: $half-baked;
+    color: $white;
+  }   
+
+  &__img-wrap {
+    height: 256px;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+  }
+  
+}

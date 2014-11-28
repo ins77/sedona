@@ -1,0 +1,40 @@
+.page-footer {
+  height: 120px;
+  padding-top: 36px;
+  text-align: center;
+  background-color: $white;
+
+  &--inside {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba($white,.9);
+  }
+
+  &__hashtag {
+    @extend .h2;
+    margin-top: 15px;
+  }
+
+  &__copyright {
+    margin-top: 10px;
+    line-height: ($line--md/$font-size--base);
+  }
+
+  &__copy-link {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+
+    &--author {
+      @include squish-text;
+      @include use-sprite("author");
+    }
+
+    &--client {
+      @include squish-text;
+      @include use-sprite("client");
+    }
+  }
+}

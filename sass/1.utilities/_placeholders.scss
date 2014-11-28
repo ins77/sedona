@@ -1,0 +1,16 @@
+// Clearfix
+
+%cf {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }  
+}
+
+// Centering block elements
+
+%center-block {
+  margin-left: auto;
+  margin-right: auto;
+}

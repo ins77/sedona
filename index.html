@@ -20,15 +20,15 @@
             <li class="main-nav__item">
               <a href="#" class="main-nav__link">Фото и Видео</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Карта штата</a>
-            </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item  main-nav__item--right">
               <a href="#" class="main-nav__link">Гостиницы</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--right">
+              <a href="#" class="main-nav__link">Карта штата</a>
             </li>
           </ul>
         </nav> 
-        <a href="index.html" class="main-logo"><img src="img/logo.png" alt=""></a>
+        <a class="main-logo" href="index.html"><img class="main-logo__img" src="img/main-logo.png" alt=""></a>
       </header>
       
 
@@ -41,7 +41,7 @@
 
       <section class="intro">
         <h2 class="h2">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
-        <p class="page-text">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+        <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
       </section>
       
 
@@ -49,14 +49,14 @@
 
         <div class="col  col--one">
           <section class="reason  reason--bright">
-            <h2 class="h2  title-num-one">Настоящий городок</h2>
-            <p class="page-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <h2 class="reason__title">Настоящий городок</h2>
+            <p class="reason__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </section>  
         </div>
         
         <div class="col  col--two">
-          <div class="feature-img-wrap">
-            <img src="img/city.jpg" alt="">
+          <div class="reason__img-wrap">
+            <img class="reason__img" src="img/city.jpg" alt="">
           </div>
         </div>
         
@@ -70,7 +70,7 @@
           <section class="feature">
             <i class="feature__icon  feature__icon--home">Дом</i>
             <h2 class="h2">Жилье</h2>
-            <p class="page-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </section>
         </div>
         
@@ -78,15 +78,15 @@
           <section class="feature">
             <i class="feature__icon  feature__icon--food">Гамбургер</i>
             <h2 class="h2">Еда</h2>
-            <p class="page-text">Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
+            <p>Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
           </section>
         </div>
         
         <div class="col  col--one">
           <section class="feature">
-            <i class="feature__icon  feature__icon--suvenier">Сувенир</i>
+            <i class="feature__icon  feature__icon--souvenir">Сувенир</i>
             <h2 class="h2">Сувениры</h2>
-            <p class="page-text">Не только китайского, но и местного производства</p>
+            <p>Не только китайского, но и местного производства</p>
           </section>
         </div>
         
@@ -98,14 +98,14 @@
 
         <div class="col  col--one  col--right">
           <section class="reason  reason--bright">
-            <h2 class="h2  title-num-two">Там есть мост дьявола</h2>
-            <p class="page-text">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
+            <h2 class="reason__title  reason__title--2">Там есть мост дьявола</h2>
+            <p class="reason__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </section>
         </div>
 
         <div class="col  col--two">
-          <div class="feature-img-wrap">
-            <img src="img/bridge.jpg" alt="">
+          <div class="reason__img-wrap">
+            <img class="reason__img" src="img/bridge.jpg" alt="">
           </div>
         </div>
 
@@ -117,22 +117,22 @@
 
         <div class="col  col--one">
           <section class="reason">
-            <h2 class="h2  title-num-three">Небольшая площадь</h2>
-            <p class="page-text">Все достопримечательности находятся очень близко </p>
+            <h2 class="reason__title  reason__title--3">Небольшая площадь</h2>
+            <p>Все достопримечательности находятся очень близко </p>
           </section>
         </div>
 
         <div class="col  col--one">
           <section class="reason">
-            <h2 class="h2  title-num-four">Красивая дорога</h2>
-            <p class="page-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h2 class="reason__title  reason__title--4">Красивая дорога</h2>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </section>
         </div>
 
         <div class="col  col--one">
           <section class="reason">
-            <h2 class="h2  title-num-five">Мало туристов</h2>
-            <p class="page-text">Большинстов едет в Гранд Каньон и толпится там</p>
+            <h2 class="reason__title  reason__title--5">Мало туристов</h2>
+            <p>Большинстов едет в Гранд Каньон и толпится там</p>
           </section>
         </div>
 
@@ -154,7 +154,7 @@
               <span class="form__text">Дата заезда:</span>
               <div class="form__input-wrap">
                 <input class="form__input  form__input--lg" type="text" placeholder="24 апреля 2014">
-                <a class="form__calendar" href="#"></a>  
+                <a class="form__btn  form__btn--calendar" href="#"></a>  
               </div>
             </label>
 
@@ -162,7 +162,7 @@
               <span class="form__text">Дата выезда:</span>
               <div class="form__input-wrap">
                 <input class="form__input  form__input--lg" type="text" placeholder="4 июля 2014">
-                <a class="form__calendar" href="#"></a>
+                <a class="form__btn  form__btn--calendar" href="#"></a>
               </div>  
             </label>
 
@@ -178,7 +178,7 @@
               </label>
 
               <label class="form__label  form__label--half">
-                <span class="form__text">Дети:</span>
+                <span class="form__text  form__text--child">Дети:</span>
                 <div class="form__input-wrap">
                   <input class="form__input  form__input--sm" type="text" value="0">
                   <a class="form__btn  form__btn--minus" href="#"></a>
@@ -205,13 +205,13 @@
         <div class="row">
 
           <div class="col  col--one">
-            <a class="footer__hashtag" href="#">#visitsedona</a>
+            <a class="page-footer__hashtag" href="#">#visitsedona</a>
           </div>
 
           <div class="col  col--one">
             <ul class="social-list">
               <li class="social-list__item">
-                <a href="#" class="social-list__btn  icon-twitter">Twitter</a>
+                <a href="#" class="social-list__btn  icon-tw">Twitter</a>
               </li>
               <li class="social-list__item">
                 <a href="#" class="social-list__btn  icon-fb">Facebook</a>
@@ -223,7 +223,7 @@
           </div>
           
           <div class="col  col--one">
-            <p class="footer__copyright">Website by <a class="footer__copy-link  footer__copy-link--author" href="#">Glukhanko</a> for <a class="footer__copy-link  footer__copy-link--client" href="#">htmlacademy</a></p>
+            <p class="page-footer__copyright">Website by <a class="page-footer__copy-link  page-footer__copy-link--author" href="#">Glukhanko</a> for <a class="page-footer__copy-link  page-footer__copy-link--client" href="#">htmlacademy</a></p>
           </div>
           
         </div>

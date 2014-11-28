@@ -1,0 +1,28 @@
+.container {
+  @extend %cf;
+  @extend %center-block;
+  position: relative;
+  max-width: 1200px;
+  background-color: $white;
+  box-shadow: 0 5px 15px rgba(#000,.2);
+}
+
+.row {
+  @extend %cf;
+}
+
+.col {
+  float: left;
+  
+  &--one {
+  	width: 33.33333333%;
+  }
+
+  &--two {
+  	width: 66.66666667%;
+  }
+
+  &--right {
+  	float: right;
+  }
+}

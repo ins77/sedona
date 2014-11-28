@@ -1,0 +1,29 @@
+*, *:before, *:after {  
+  box-sizing: border-box; 
+}
+
+* {
+  @include selection($half-baked, $white);
+}
+
+body {
+  font-size: $font-size--base;
+  line-height: ($line--base/$font-size--base);
+  font-family: $font-family--primary;
+  font-weight: $font-weight--normal;
+  text-transform: uppercase;
+  background-color: $concrete;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+

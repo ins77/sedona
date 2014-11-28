@@ -1,0 +1,114 @@
+.form {
+  @extend %center-block;
+  width: 568px;
+
+  &__header {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: $font-size--md;
+    line-height: ($line--md/$font-size--md);
+    color: $white;
+    background-color: $pine-cone;
+  }
+
+  &__body {
+    padding: 55px 54px;
+    font-size: $font-size--base;
+    text-align: left;
+    background-color: $white;
+    box-shadow: 0 7px 15px rgba($black,.15);
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 29px;
+    font-size: 0;
+    font-weight: $font-weight--bold;
+    line-height: ($line--md/$font-size--base);
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &--half {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    width: 112px;
+    font-size: $font-size--base;
+
+    &--child {
+      padding-left: 42px;
+    }
+  }
+
+  &__input-wrap {
+    position: relative;
+    display: inline-block;
+    font-size: $font-size--base;
+  }
+
+  &__input {
+    font-weight: $font-weight--bold;
+    line-height: ($line--md/$font-size--base);
+    text-transform: uppercase;
+    background-color: $concrete;
+    border: none;
+    outline: none;
+    @include input-placeholder {
+      color: $black;
+      opacity: 1;
+    }
+    
+    &--lg {
+      width: 346px;
+      padding: 7px 40px 6px 15px;
+    }
+
+    &--sm {
+      width: 118px;
+      padding: 7px 40px 6px;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    opacity: .2;
+    transition: opacity $trns-duration;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--calendar {
+      right: 0;
+      @include use-sprite("calendar");
+    }
+
+    &--minus {
+      left: 0;
+      @include use-sprite("minus");
+    }
+
+    &--plus {
+      right: 0;
+      @include use-sprite("plus");
+    }
+  }
+
+  &__submit {
+    @extend %btn;
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px 20px;
+    font-size: $font-size--md;
+    font-weight: $font-weight--bold;
+    line-height: ($line--md/$font-size--md);
+  }
+  
+}

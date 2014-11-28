@@ -1,0 +1,18 @@
+%btn {
+  display: inline-block;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $half-baked;
+  border: none;
+  outline: none;
+  transition: background-color $trns-duration, color $trns-duration;
+
+  &:hover {
+    background-color: shade($half-baked, 5%);
+  }
+
+  &:active {
+    color: rgba($white,.3);
+    background-color: shade($half-baked, 10%);
+  }
+}

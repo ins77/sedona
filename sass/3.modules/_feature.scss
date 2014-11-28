@@ -1,0 +1,27 @@
+.feature {
+  height: 330px;
+  padding-top: 55px; 
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+
+  &__icon {
+    display: inline-block;
+    margin-bottom: 25px;
+    @include squish-text;
+
+    &--home {
+      @include use-sprite("house");
+    }
+
+    &--food {
+      @include use-sprite("food");
+    }
+
+    &--souvenir {
+      @include use-sprite("souvenir");
+    }
+
+  }
+
+}

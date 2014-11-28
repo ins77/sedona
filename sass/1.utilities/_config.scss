@@ -1,0 +1,58 @@
+// ---------------- Typography ------------------
+
+// Font Stacks
+
+$font-family--primary : 'PT Sans', Helvetica, Arial, Verdana, sans-serif;
+
+// Font Weights
+
+// $font-weight--thin    : 100;
+// $font-weight--light   : 300;
+$font-weight--normal  : 400;
+// $font-weight--medium  : 500;
+$font-weight--bold    : 700;
+
+
+// Text 
+
+$font-size--base  : 14px;
+$line--base       : 21px;  
+
+$font-size--sm    : 16px;
+$font-size--md    : 21px;
+$font-size--lg    : 30px;
+
+$line--sm         : 24px;
+$line--md         : 26px;  
+
+
+
+
+// ------------------ Colors --------------------
+
+// Descriptive Base Colors by http://chir.ag/projects/name-that-color
+
+$black       : #000;
+$white       : #fff;
+
+$half-baked  : #81b3d2;
+$gallery     : #eee;
+$pine-cone   : #766357;
+$concrete    : #f2f2f2;
+$kabul       : #604e43;
+$mine-shaft  : #333;
+
+
+
+
+// ------------------- Other ---------------------
+
+// Transitions
+
+$trns-duration: .3s;
+
+// Responsive
+
+$brkpoint-sm   : 1px;
+$brkpoint-md   : 768px;
+$brkpoint-lg   : 1100px;

@@ -1,0 +1,50 @@
+.main-nav {
+  
+
+  &__list {
+    @extend %cf;
+    background-color: $white;
+  }
+
+  &__item {
+    float: left;
+    width: 20%;
+
+    &--right {
+      float: right;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font: $font-weight--bold #{$font-size--base}/($line--md/$font-size--base) $font-family--primary; 
+    text-align: center;
+    white-space: nowrap;
+    transition: color $trns-duration;
+
+    &:hover {
+      color: $half-baked;
+    }
+
+    &:active {
+      color: rgba($black,.3);
+    }
+
+    &--active {
+      color: $pine-cone;
+
+      &:hover {
+        color: $kabul;
+      }
+
+      &:active {
+        color: rgba($pine-cone,.3);
+      }
+    }
+
+  }
+
+
+}
