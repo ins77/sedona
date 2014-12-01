@@ -2,13 +2,13 @@
   height: 120px;
   padding-top: 36px;
   text-align: center;
-  background-color: $white;
+  background-color: $c_white;
 
   &--inside {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: rgba($white,.9);
+    background-color: rgba($c_white,.9);
   }
 
   &__hashtag {
@@ -18,22 +18,21 @@
 
   &__copyright {
     margin-top: 10px;
-    line-height: ($line--md/$font-size--base);
+    line-height: ($line-height_md/$font-size_base);
   }
 
   &__copy-link {
+    @extend %hide-text;
     display: inline-block;
     margin-left: 4px;
     margin-right: 4px;
     vertical-align: middle;
 
     &--author {
-      @include squish-text;
       @include use-sprite("author");
     }
 
     &--client {
-      @include squish-text;
       @include use-sprite("client");
     }
   }

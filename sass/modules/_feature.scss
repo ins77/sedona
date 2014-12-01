@@ -6,9 +6,9 @@
   text-align: center;
 
   &__icon {
+    @extend %hide-text;
     display: inline-block;
     margin-bottom: 25px;
-    @include squish-text;
 
     &--home {
       @include use-sprite("house");

@@ -1,10 +1,10 @@
 .container {
   @extend %cf;
-  @extend %center-block;
+  margin: 0 auto;
   position: relative;
   max-width: 1200px;
-  background-color: $white;
-  box-shadow: 0 5px 15px rgba(#000,.2);
+  background-color: $c_white;
+  box-shadow: 0 5px 15px rgba($c_black,.2);
 }
 
 .row {

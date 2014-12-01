@@ -1,0 +1,18 @@
+%btn {
+  display: inline-block;
+  color: $c_white;
+  text-transform: uppercase;
+  background-color: $c_half-baked;
+  border: none;
+  outline: none;
+  @include trz;
+
+  &:hover {
+    background-color: shade($c_half-baked, 5%);
+  }
+
+  &:active {
+    color: rgba($c_white,.3);
+    background-color: shade($c_half-baked, 10%);
+  }
+}

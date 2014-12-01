@@ -1,0 +1,7 @@
+.h2 {
+  display: block;
+  margin-bottom: 20px;
+  font-size: $font-size_md;
+  font-weight: $font-weight_bold;
+  line-height: ($line-height_md/$font-size_md);
+}

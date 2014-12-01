@@ -1,31 +1,31 @@
 .form {
-  @extend %center-block;
   width: 568px;
+  margin: 0 auto;
 
   &__header {
     display: block;
     padding-top: 25px;
     padding-bottom: 25px;
-    font-size: $font-size--md;
-    line-height: ($line--md/$font-size--md);
-    color: $white;
-    background-color: $pine-cone;
+    font-size: $font-size_md;
+    line-height: ($line-height_md/$font-size_md);
+    color: $c_white;
+    background-color: $c_pine-cone;
   }
 
   &__body {
     padding: 55px 54px;
-    font-size: $font-size--base;
+    font-size: $font-size_base;
     text-align: left;
-    background-color: $white;
-    box-shadow: 0 7px 15px rgba($black,.15);
+    background-color: $c_white;
+    box-shadow: 0 7px 15px rgba($c_black,.15);
   }
 
   &__label {
     display: block;
     margin-bottom: 29px;
     font-size: 0;
-    font-weight: $font-weight--bold;
-    line-height: ($line--md/$font-size--base);
+    font-weight: $font-weight_bold;
+    line-height: ($line-height_md/$font-size_base);
     vertical-align: middle;
     white-space: nowrap;
 
@@ -38,7 +38,7 @@
   &__text {
     display: inline-block;
     width: 112px;
-    font-size: $font-size--base;
+    font-size: $font-size_base;
 
     &--child {
       padding-left: 42px;
@@ -48,20 +48,17 @@
   &__input-wrap {
     position: relative;
     display: inline-block;
-    font-size: $font-size--base;
+    font-size: $font-size_base;
   }
 
   &__input {
-    font-weight: $font-weight--bold;
-    line-height: ($line--md/$font-size--base);
+    font-weight: $font-weight_bold;
+    line-height: ($line-height_md/$font-size_base);
     text-transform: uppercase;
-    background-color: $concrete;
+    background-color: $c_concrete;
     border: none;
     outline: none;
-    @include input-placeholder {
-      color: $black;
-      opacity: 1;
-    }
+    @include placeholder($c_black);
     
     &--lg {
       width: 346px;
@@ -78,15 +75,15 @@
   &__btn {
     position: absolute;
     top: 0;
+    right: 0;
     opacity: .2;
-    transition: opacity $trns-duration;
+    @include trz;
 
     &:hover {
       opacity: 1;
     }
 
     &--calendar {
-      right: 0;
       @include use-sprite("calendar");
     }
 
@@ -96,7 +93,6 @@
     }
 
     &--plus {
-      right: 0;
       @include use-sprite("plus");
     }
   }
@@ -106,9 +102,9 @@
     width: 100%;
     margin-top: 25px;
     padding: 15px 20px;
-    font-size: $font-size--md;
-    font-weight: $font-weight--bold;
-    line-height: ($line--md/$font-size--md);
+    font-size: $font-size_md;
+    font-weight: $font-weight_bold;
+    line-height: ($line-height_md/$font-size_md);
   }
   
 }

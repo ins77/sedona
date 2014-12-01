@@ -1,0 +1,19 @@
+ .search {
+  padding-top: 55px;
+  padding-bottom: 200px;
+  text-align: center;
+  background: $c_white image-url("map.jpg") center 256px no-repeat;
+
+  &__title {
+    display: block;
+    margin-bottom: 30px;
+    font-size: $font-size_lg;
+    line-height: ($line-height_md/$font-size_lg);
+  }
+
+  &__text {
+    margin-bottom: 35px;
+    line-height: ($line-height_sm/$font-size_base);
+  }
+
+}

@@ -4,7 +4,7 @@
   padding-right: 65px;
   height: 256px;
   text-align: center;
-  background-color: $gallery;
+  background-color: $c_gallery;
 
   &__title {
     @extend .h2;
@@ -16,8 +16,8 @@
       content: "— №1 —";
       display: block;
       margin-top: 10px;
-      font-weight: $font-weight--normal;
-      font-size: $font-size--base;
+      font-weight: $font-weight_regular;
+      font-size: $font-size_base;
     }
 
     @for $i from 2 to 6 {
@@ -28,8 +28,8 @@
   }
 
   &--bright {
-    background-color: $half-baked;
-    color: $white;
+    background-color: $c_half-baked;
+    color: $c_white;
   }   
 
   &__img-wrap {

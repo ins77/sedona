@@ -1,22 +1,21 @@
 // Compass
 @import "compass";
-@import "compass/css3/selection";
 @import "compass/layout";
 
 // Fonts
 @import "http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic";
 
-// Utilities
-@import "1.utilities/index";
+// normalize
+@import "vendor/normalize";
 
-// Base Styles
-@import "2.base/index";
+// utilities
+@import "utilities/index";
 
-// Modules
-@import "3.modules/index";
+// global
+@import "global/index";
 
-// Layout Styles
-@import "4.layout/index"; 
+// modules
+@import "modules/index";
 
 
 

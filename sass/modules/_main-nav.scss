@@ -1,9 +1,8 @@
 .main-nav {
   
-
   &__list {
     @extend %cf;
-    background-color: $white;
+    background-color: $c_white;
   }
 
   &__item {
@@ -19,28 +18,28 @@
     display: block;
     padding-top: 17px;
     padding-bottom: 17px;
-    font: $font-weight--bold #{$font-size--base}/($line--md/$font-size--base) $font-family--primary; 
+    font: $font-weight_bold #{$font-size_base}/($line-height_md/$font-size_base) $font-family_base; 
     text-align: center;
     white-space: nowrap;
-    transition: color $trns-duration;
+    @include trz;
 
     &:hover {
-      color: $half-baked;
+      color: $c_half-baked;
     }
 
     &:active {
-      color: rgba($black,.3);
+      color: rgba($c_black,.3);
     }
 
     &--active {
-      color: $pine-cone;
+      color: $c_pine-cone;
 
       &:hover {
-        color: $kabul;
+        color: $c_kabul;
       }
 
       &:active {
-        color: rgba($pine-cone,.3);
+        color: rgba($c_pine-cone,.3);
       }
     }
 
