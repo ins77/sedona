@@ -1,8 +1,8 @@
 .main-nav {
   
   &__list {
-    @extend %cf;
-    background-color: $c_white;
+    @extend %clearfix;
+    background-color: #fff;
   }
 
   &__item {
@@ -12,34 +12,35 @@
     &--right {
       float: right;
     }
+
   }
 
   &__link {
     display: block;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    font: $font-weight_bold #{$font-size_base}/($line-height_md/$font-size_base) $font-family_base; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font: 700 #{$font-size-base}/($line-height-md / $font-size-base) $font-family-base; 
     text-align: center;
     white-space: nowrap;
-    @include trz;
+    transition: all .3s;
 
     &:hover {
-      color: $c_half-baked;
+      color: $blue;
     }
 
     &:active {
-      color: rgba($c_black,.3);
+      color: rgba(#000,.3);
     }
 
     &--active {
-      color: $c_pine-cone;
+      color: $brown;
 
       &:hover {
-        color: $c_kabul;
+        color: $brown-dark;
       }
 
       &:active {
-        color: rgba($c_pine-cone,.3);
+        color: rgba($brown,.3);
       }
     }
 

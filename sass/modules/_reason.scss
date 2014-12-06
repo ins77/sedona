@@ -1,23 +1,26 @@
 .reason {
-  padding-top: 53px;
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-top: 55px;
+  padding-left: percentage(65px / 400px);
+  padding-right: percentage(65px / 400px);
   height: 256px;
   text-align: center;
-  background-color: $c_gallery;
+  background-color: $gray-light;
 
   &__title {
-    @extend .h2;
-    padding-left: 59px;
-    padding-right: 59px;
-    margin-bottom: 30px;
+    display: block;
+    padding-left: percentage(81px / 400px);
+    padding-right: percentage(81px / 400px);
+    margin-bottom: 25px;
+    font-size: $font-size-md;
+    font-weight: 700;
+    line-height: ($line-height-md / $font-size-md);
 
     &:after {
       content: "— №1 —";
       display: block;
       margin-top: 10px;
-      font-weight: $font-weight_regular;
-      font-size: $font-size_base;
+      font-weight: 400;
+      font-size: $font-size-base;
     }
 
     @for $i from 2 to 6 {
@@ -28,8 +31,8 @@
   }
 
   &--bright {
-    background-color: $c_half-baked;
-    color: $c_white;
+    background-color: $blue;
+    color: #fff;
   }   
 
   &__img-wrap {
@@ -38,7 +41,7 @@
   }
 
   &__img {
-    width: 100%;
+    min-height: 256px;
   }
   
 }

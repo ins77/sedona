@@ -1,34 +1,27 @@
 // font-family
-$font-family_base: 'PT Sans', Helvetica, Arial, Verdana, sans-serif;
+$font-family-base: 'PT Sans', Helvetica, Arial, Verdana, sans-serif;
 // font-size
-$font-size_base: 14px;
-$font-size_sm  : 16px;
-$font-size_md  : 21px;
-$font-size_lg  : 30px;
+$font-size-base: 14px;
+$font-size-sm:   ($font-size-base + 2);
+$font-size-md:   ($font-size-base + 7);
+$font-size-lg:   ($font-size-base + 16);
 // line-height
-$line-height_base: 21px;  
-$line-height_sm  : 24px;
-$line-height_md  : 26px;  
-// font-weight
-$font-weight_regular: 400;
-$font-weight_bold   : 700;
+$line-height-base: 21px;  
+$line-height-sm:   ($line-height-base + 3);
+$line-height-md:   ($line-height-base + 5);
 
 
 // colors http://chir.ag/projects/name-that-color
-$c_black       : #000;
-$c_white       : #fff;
-
-$c_half-baked  : #81b3d2;
-$c_gallery     : #eee;
-$c_pine-cone   : #766357;
-$c_concrete    : #f2f2f2;
-$c_kabul       : #604e43;
-$c_mine-shaft  : #333;
+$gray:       #f2f2f2; //concrete
+$gray-light: #eee; //gallery
+$gray-dark:  #333; //mine-shaft
+$blue:       #81b3d2; //half-baked
+$brown:      #766357; //pine-cone
+$brown-dark: #604e43; //kabul
 
 
 // border-radius
-$border-radius_base: 2px;
-$border-radius_round: 50%;
+$border-radius-base: 2px;
 
 
 // Responsive

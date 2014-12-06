@@ -1,28 +1,50 @@
 .container {
-  @extend %cf;
-  margin: 0 auto;
+  @extend %clearfix;
   position: relative;
+  margin: 0 auto;
   max-width: 1200px;
-  background-color: $c_white;
-  box-shadow: 0 5px 15px rgba($c_black,.2);
-}
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(#000,.2);
+} 
 
 .row {
-  @extend %cf;
+  @extend %clearfix;
 }
 
-.col {
+%col {
   float: left;
-  
-  &--one {
-  	width: 33.33333333%;
-  }
-
-  &--two {
-  	width: 66.66666667%;
-  }
-
-  &--right {
-  	float: right;
-  }
 }
+
+.col-right {
+  float: right;
+}
+
+.col1 {
+  @extend %col;
+  width: 33.3333333%;
+}
+
+.col2 {
+  @extend %col;
+  width: 66.6666667%;
+}
+
+.col3 {
+  @extend %col;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .col1, 
+  .col2, 
+  .col3 {
+    float: none;
+    width: 100%;
+  }
+
+  .col-right {
+    float: none;
+  }
+
+} 

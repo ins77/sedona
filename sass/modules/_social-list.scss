@@ -1,15 +1,9 @@
 .social-list {
+  font-size: 0;
 
   &__item {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
-  &__btn {
-    @extend %btn;
-    width: 46px;
-    height: 48px;
-    font-size: 20px;
-    line-height: 48px;
-  }
 }
