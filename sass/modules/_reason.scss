@@ -1,0 +1,47 @@
+.reason {
+  padding-top: 55px;
+  padding-left: percentage(65px / 400px);
+  padding-right: percentage(65px / 400px);
+  height: 256px;
+  text-align: center;
+  background-color: $gray-light;
+
+  &__title {
+    display: block;
+    padding-left: percentage(81px / 400px);
+    padding-right: percentage(81px / 400px);
+    margin-bottom: 25px;
+    font-size: $font-size-md;
+    font-weight: 700;
+    line-height: ($line-height-md / $font-size-md);
+
+    &:after {
+      content: "— №1 —";
+      display: block;
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: $font-size-base;
+    }
+
+    @for $i from 2 to 6 {
+      &--#{$i}:after {
+        content: "— №#{$i} —";
+      }
+    }
+  }
+
+  &--bright {
+    background-color: $blue;
+    color: #fff;
+  }   
+
+  &__img-wrap {
+    height: 256px;
+    overflow: hidden;
+  }
+
+  &__img {
+    min-height: 256px;
+  }
+  
+}

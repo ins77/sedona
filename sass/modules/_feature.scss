@@ -1,0 +1,27 @@
+.feature {
+  height: 330px;
+  padding-top: 55px; 
+  padding-left: percentage(60px / 400px);
+  padding-right: percentage(60px / 400px);
+  text-align: center;
+
+  &__icon {
+    @extend %hide-text;
+    display: inline-block;
+    margin-bottom: 25px;
+
+    &--home {
+      @include use-sprite("house");
+    }
+
+    &--food {
+      @include use-sprite("food");
+    }
+
+    &--souvenir {
+      @include use-sprite("souvenir");
+    }
+
+  }
+
+}

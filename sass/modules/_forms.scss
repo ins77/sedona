@@ -1,0 +1,103 @@
+.form-search {
+  width: 568px;
+  margin: 0 auto;
+
+  &__header {
+    display: block;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: $font-size-md;
+    line-height: ($line-height-md / $font-size-md);
+    color: #fff;
+    background-color: $brown;
+  }
+
+  &__body {
+    padding: 55px 54px;
+    font-size: $font-size-base;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 7px 15px rgba(#000,.15);
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 0;
+    font-weight: 700;
+    line-height: ($line-height-md / $font-size-base);
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &--half {
+      float: left;
+      width: 50%;
+    }
+
+    &--margin-bottom {
+      margin-bottom: 55px;
+    }
+
+  }
+
+  &__text {
+    display: inline-block;
+    width: 112px;
+    font-size: $font-size-base;
+
+    &--child {
+      padding-left: 42px;
+    }
+  }
+
+  &__input-wrap {
+    position: relative;
+    display: inline-block;
+    font-size: $font-size-base;
+  }
+
+  &__input {
+    width: 346px;
+    padding: 7px 40px 6px 15px;
+    font-weight: 700;
+    line-height: ($line-height-md / $font-size-base);
+    text-transform: uppercase;
+    background-color: $gray;
+    border: none;
+    outline: none;
+    @include placeholder(#000);
+
+    &--sm {
+      width: 118px;
+      padding: 7px 40px 6px;
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .2;
+    transition: all .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &--calendar {
+      @include use-sprite("calendar");
+    }
+
+    &--minus {
+      left: 0;
+      @include use-sprite("minus");
+    }
+
+    &--plus {
+      @include use-sprite("plus");
+    }
+  }
+  
+}

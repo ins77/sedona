@@ -1,0 +1,50 @@
+.container {
+  @extend %clearfix;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(#000,.2);
+} 
+
+.row {
+  @extend %clearfix;
+}
+
+%col {
+  float: left;
+}
+
+.col-right {
+  float: right;
+}
+
+.col1 {
+  @extend %col;
+  width: 33.3333333%;
+}
+
+.col2 {
+  @extend %col;
+  width: 66.6666667%;
+}
+
+.col3 {
+  @extend %col;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .col1, 
+  .col2, 
+  .col3 {
+    float: none;
+    width: 100%;
+  }
+
+  .col-right {
+    float: none;
+  }
+
+} 

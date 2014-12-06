@@ -1,0 +1,30 @@
+// font-family
+$font-family-base: 'PT Sans', Helvetica, Arial, Verdana, sans-serif;
+// font-size
+$font-size-base: 14px;
+$font-size-sm:   ($font-size-base + 2);
+$font-size-md:   ($font-size-base + 7);
+$font-size-lg:   ($font-size-base + 16);
+// line-height
+$line-height-base: 21px;  
+$line-height-sm:   ($line-height-base + 3);
+$line-height-md:   ($line-height-base + 5);
+
+
+// colors http://chir.ag/projects/name-that-color
+$gray:       #f2f2f2; //concrete
+$gray-light: #eee; //gallery
+$gray-dark:  #333; //mine-shaft
+$blue:       #81b3d2; //half-baked
+$brown:      #766357; //pine-cone
+$brown-dark: #604e43; //kabul
+
+
+// border-radius
+$border-radius-base: 2px;
+
+
+// Responsive
+$brkpoint_sm: 1px;
+$brkpoint_md: 768px;
+$brkpoint_lg: 1100px;

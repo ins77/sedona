@@ -1,0 +1,50 @@
+.main-nav {
+  
+  &__list {
+    @extend %clearfix;
+    background-color: #fff;
+  }
+
+  &__item {
+    float: left;
+    width: 20%;
+
+    &--right {
+      float: right;
+    }
+
+  }
+
+  &__link {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font: 700 #{$font-size-base}/($line-height-md / $font-size-base) $font-family-base; 
+    text-align: center;
+    white-space: nowrap;
+    transition: all .3s;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      color: rgba(#000,.3);
+    }
+
+    &--active {
+      color: $brown;
+
+      &:hover {
+        color: $brown-dark;
+      }
+
+      &:active {
+        color: rgba($brown,.3);
+      }
+    }
+
+  }
+
+
+}

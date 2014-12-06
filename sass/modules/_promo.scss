@@ -1,0 +1,22 @@
+.promo {
+  padding-top: 77px;
+  padding-bottom: 82px;   
+  text-align: center;
+  background: inline-image("promo_border.png") no-repeat 50% 100% / 100% 57px,
+              image-url("promo_bg.jpg") no-repeat 50% 0 fixed;
+
+  &__welcome {
+    margin: 0 auto 55px;
+    @include replace-text-with-dimensions("promo_welcome.png");
+  }
+
+  &__title {
+    margin: 0 auto 55px;
+    @include replace-text-with-dimensions("promo_title.png");
+  }
+
+  &__quote {
+    margin: 0 auto;
+    @include replace-text-with-dimensions("promo_quote.png");
+  }
+}
